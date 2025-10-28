@@ -611,6 +611,34 @@ import re
 import base64
 import datetime
 
+os.system('title [ Python Auto Installer by Marky ]')
+os.system('cls')
+
+modules = [
+    "pywin32",
+    "requests",
+    "discord.py",
+    "cryptography"
+]
+
+print("========== AUTO INSTALLER STARTED ==========\n")
+time.sleep(0.5)
+
+for mod in modules:
+    print(f"[CMD] python -m pip install {mod}")
+    try:
+        # execute the install command
+        subprocess.check_call([sys.executable, "-m", "pip", "install", mod])
+        print(f"[✔] Successfully installed {mod}\n")
+    except subprocess.CalledProcessError:
+        print(f"[❌] Failed to install {mod}\n")
+    time.sleep(0.3)
+
+print("============================================")
+print(" All modules have been checked/installed!")
+print("============================================")
+input("\nPress ENTER to exit...")
+
 def install_import(modules):
     for module, pip_name in modules:
         try:
